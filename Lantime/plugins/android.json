@@ -15,6 +15,10 @@
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"android-package\" value=\"com.phonegap.plugins.barcodescanner.BarcodeScanner\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"imeiplugin\"><param name=\"android-package\" value=\"com.joandilee.imeiplugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -46,6 +50,20 @@
                         },
                         {
                             "xml": "<uses-feature android:name=\"android.hardware.camera\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
                             "count": 1
                         }
                     ]
@@ -540,6 +558,12 @@
             "PACKAGE_NAME": "com.Lantime.com"
         },
         "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.Lantime.com"
+        },
+        "com.joandilee.imeiplugin": {
+            "PACKAGE_NAME": "com.Lantime.com"
+        },
+        "org.apache.cordova.geolocation": {
             "PACKAGE_NAME": "com.Lantime.com"
         }
     },

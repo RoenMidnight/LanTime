@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
@@ -19,23 +19,30 @@
 		<script type="text/javascript" charset="utf-8" src="jQuery/jquery.mobile-1.4.5.min.js"></script>			
 		<script type="text/javascript" src="cordova.js"></script>
 
-        <script type="text/javascript" src="js/index.js"></script>		
+       <script type="text/javascript" src="js/index.js"></script>	
 		<script type="text/javascript">
             app.initialize();
         </script>		
-		<script type="text/javascript" src="js/barcode.js"></script>
+		<script type="text/javascript" src="js/barcode.js"></script> 
+		<script type="text/javascript" src="js/interaction.js"></script>
+		
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Lantime</title>
     </head>
-    <body onLoad="callImei">			
+    <body>			
 		<div data-role="page">		
 			<div data-role="header" >
 				<h1>Lantime</h1>	
-			</div>
-			
+			</div>			
 			<div role="main">
-				<button onClick="barCodeScan();"> Scan </button>			
-			
+				<h1 class="Titulo">Lantime</h1>
+				
+					<div data-role="controlgroup">
+						<a href="javascript: barCodeScan();" data-role="button"> Scan </a>			
+						<a href="javascript: callimei();" data-role="button">IMEI</a>
+						<a href="javascript: takeLocation();" data-role="button">Localização</a>
+					</div>
+					
 				<div data-role="footer">
 					<h4></h4>
 				</div>	

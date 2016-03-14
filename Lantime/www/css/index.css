@@ -113,3 +113,17 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+a{
+	height: 50px;
+	text-align: center;
+}
+
+@font-face{
+	font-family: hemiHead;
+	src: url(../fonts/HEMIHEAD.TTF);
+}
+
+h1.Titulo{
+	font-family: hemiHead;
+}
